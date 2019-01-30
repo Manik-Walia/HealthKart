@@ -1,0 +1,570 @@
+
+body,html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+#sidebar{
+    position: absolute;
+    height: 100%;
+    width: 500px;
+    background: #181818;
+    z-index: 9999999;
+    left: -500px;
+    transition: 2s;
+    transform-style: preserve-3d;
+}
+#button{
+    position: absolute;
+    top: 20%;
+    left: 105%;
+    height: 20px;
+    width: 25px;
+    z-index: 9999999;
+}
+.tgl-btn{
+    display: block;
+    height: 5px;
+    background: blueviolet;
+    width: 25px;
+    margin-top:10%;
+    cursor: pointer;
+}
+
+#sidebar.sal{
+    left: 0;
+}
+#sidebar.active{
+    left: 0;
+    transition: 2s;
+}
+#c{
+    transform: scale(1);
+}
+#a,#b{
+    transform: rotate(0);
+    transition-duration: 1s;
+}
+#a.active{
+    transform: rotate(130deg);
+    transition-duration: 1s;
+}
+#b.active{
+    transform: rotate(-130deg);
+    margin-top: -20%;
+    transition-duration: 1s;
+}
+#c.active{
+    transform: scale(0);
+}
+#button.active{
+    left: 90%;
+}
+nav>ul{
+    text-align: center;
+    margin-top: 10%;
+}
+nav>ul>li>{
+    list-style: none;
+}
+nav>ul{
+    list-style: none;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    font-family: 'Malgun Gothic Semilight','Dancing Script',sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    line-height: 1.5em;
+    color: #d89fb5;
+}
+nav>ul>li>a:hover{
+    color: crimson;
+    transition: 1s;
+}
+#branding_text #left #brand h1 a{
+    font-size: 6rem;
+    font-family: 'Dancing Script','Montserrat', sans-serif;
+    text-decoration: none;
+    color: #47ffe1;
+}
+
+#branding_text #left #brand h1{
+    text-align: center;
+}
+
+@media screen and (max-device-width: 1200px) {
+    #sidebar{
+        width: 500px;
+        left:-500px;
+    }
+    #sidebar.active{
+        left: 0;
+    }
+
+}
+
+
+@media screen and (max-device-width: 900px) {
+    #sidebar{
+        width: 300px;
+        left:-300px;
+    }
+    #sidebar.active{
+        left: 0;
+    }
+    #branding_text #left #brand h1 a{
+        font-size: 3rem;
+        font-family: 'Dancing Script','Montserrat', sans-serif;
+        text-decoration: none;
+        color: #47ffe1;
+    }
+    nav>ul>li>a{
+        text-decoration: none;
+        font-family: 'Malgun Gothic Semilight','Dancing Script',sans-serif;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.5em;
+        color: #d89fb5;
+    }
+
+
+}
+
+
+@media screen and (max-device-width: 700px) {
+    #sidebar{
+        width: 350px;
+        left:-350px;
+    }
+    #sidebar.active{
+        left: 0;
+    }
+    #branding_text #left #brand h1 a{
+        font-size: 3rem;
+        font-family: 'Dancing Script','Montserrat', sans-serif;
+        text-decoration: none;
+        color: #47ffe1;
+    }
+    nav>ul>li>a{
+        text-decoration: none;
+        font-family: 'Malgun Gothic Semilight','Dancing Script',sans-serif;
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 1.5em;
+        color: #d89fb5;
+    }
+}
+
+@media screen and (max-device-width: 650px) {
+    #sidebar{
+        width: 200px;
+        left:-200px;
+    }
+    #sidebar.active{
+        left: 0;
+    }
+    #branding_text #left #brand h1 a{
+        font-size: 2rem;
+        font-family: 'Dancing Script','Montserrat', sans-serif;
+        text-decoration: none;
+        color: #47ffe1;
+    }
+    nav>ul>li>a{
+        text-decoration: none;
+        font-family: 'Malgun Gothic Semilight','Dancing Script',sans-serif;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.5em;
+        color: #d89fb5;
+    }
+
+    #button.active{
+        left: 80%;
+        top: 12%;
+    }
+
+}
+
+
+@media screen and (max-device-width: 500px) {
+    #sidebar{
+        width: 200px;
+        left:-200px;
+    }
+    #sidebar.active{
+        left: 0;
+    }
+    #branding_text #left #brand h1 a{
+        font-size: 2rem;
+        font-family: 'Dancing Script','Montserrat', sans-serif;
+        text-decoration: none;
+        color: #47ffe1;
+    }
+    nav>ul>li>a{
+        text-decoration: none;
+        font-family: 'Malgun Gothic Semilight','Dancing Script',sans-serif;
+        text-align: center;
+        font-size: 4rem;
+        line-height: 2.5em;
+        color: #d89fb5;
+    }
+
+    #button.active{
+        left: 80%;
+        top: 12%;
+    }
+
+}
+
+
+
+@media screen and (max-device-width: 400px) {
+    #sidebar{
+        width: 200px;
+        left:-200px;
+        min-height: 100vh;
+    }
+    #sidebar.active{
+        left: 0;
+    }
+    #branding_text #left #brand h1 a{
+        font-size: 2rem;
+        font-family: 'Dancing Script','Montserrat', sans-serif;
+        text-decoration: none;
+        color: #47ffe1;
+    }
+    nav>ul>li>a{
+        text-decoration: none;
+        font-family: 'Malgun Gothic Semilight','Dancing Script',sans-serif;
+        text-align: center;
+        font-size: 4rem;
+        line-height: 1.5em;
+        color: #d89fb5;
+    }
+
+    #button.active{
+        left: 80%;
+        top: 12%;
+    }
+
+}
+
+
+
+@media screen and (max-device-width: 350px) {
+    #sidebar{
+        width: 200px;
+        left:-200px;
+        min-height: 100vh;
+    }
+    #sidebar.active{
+        left: 0;
+    }
+    #branding_text #left #brand h1 a{
+        font-size: 2rem;
+        font-family: 'Dancing Script','Montserrat', sans-serif;
+        text-decoration: none;
+        color: #47ffe1;
+    }
+    nav>ul>li>a{
+        text-decoration: none;
+        font-family: 'Malgun Gothic Semilight','Dancing Script',sans-serif;
+        text-align: center;
+        font-size: 4rem;
+        line-height: 1.5em;
+        color: #d89fb5;
+    }
+
+    #button.active{
+        left: 80%;
+        top: 12%;
+    }
+
+}
+
+
+
+.products_section{
+    min-height: 220vh;
+    width: 100%;
+}
+
+.products_section::before{
+    content: '';
+    position: absolute;
+    min-height: 240vh;
+    width: 50%;
+
+    background: #d1ecf4bf;
+    z-index: -99;
+}
+.products_section::after{
+    content: '';
+    position: absolute;
+    min-height: 240vh;
+    width: 50%;
+    left: 50%;
+    background:  #d89fb5;
+    opacity: 0.3;
+    z-index: -99;
+
+}
+
+.products_about{
+    position: absolute;
+    top:-5%;
+    width: 100%;
+    text-align: center;
+}
+
+.products_about h1{
+    font-size: 5rem;
+    font-family: "Dancing Script", "Segoe Script", sans-serif;
+    color: #ff2090;
+}
+.products_about h1:before{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 38%;
+    background: #ff2090;
+    top: 30%;
+    left: 0;
+
+}
+
+.products_about h1:after{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 38%;
+    background: #ff2090;
+    top: 30%;
+    left: 62%;
+
+}
+.outer-box{
+    height: 80vh;
+    width: 80%;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 11%;
+
+}
+.inbox{
+    height: 300px;
+    width: 25%;
+    margin: 3%;
+    float: left;
+    background: #000;
+    border: 3px solid palevioletred;
+    box-shadow: 3px 3px 15px 10px rgba(0,0,0,0.3);
+    transition: 1s;
+
+}
+.inbox a{
+    text-decoration: none;
+}
+.description{
+    height: 100%;
+    width: 100%;
+    background: white;
+    transition: 1s;
+}
+
+.description img{
+    height: 250px;
+    width: 100%;
+}
+
+
+.description p{
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    margin-top: 2%;
+    font-size: 25px;
+}
+
+.uppertext {
+    text-align: center;
+    opacity: 0;
+    transition: 1s;
+    color: white;
+    font-size: 25px;
+}
+
+.inbox:hover{
+    box-shadow: none;
+    transition: 1s;
+}
+.inbox:hover .description{
+    opacity: 0.5;
+}
+
+.inbox:hover .uppertext {
+    opacity: 1;
+    transform: translateY(-190px);
+    transition: 1s;
+}
+
+#footer{
+    height: 50px;
+    margin-top: 10%;
+}
+footer{
+    height: 50px;
+    background: palevioletred;
+
+
+}
+#credits{
+    text-align: center;
+}
+#credits p{
+    font-size: 30px;
+    color: white;
+}
+
+
+@media screen and (max-device-width:500px){
+    body{
+        overflow-y: hidden;
+    }
+    #image-container{
+        visibility: hidden;
+    }
+
+    #simple_intro h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    #simple_intro{
+        left: 30%;
+        margin-top: 10%;
+    }
+    #side_Align{
+        left: 5%;
+        width: 90%;
+        text-align: center;
+        font-size: 10px;
+        margin-top: 45%;
+    }
+    #side_Align p{
+        font-size: 25px;
+    }
+
+    .inbox{
+        width: 40%;
+        margin: 3%;
+        height: 250px;
+    }
+    .outer-box{
+        margin-top: 30%;
+        width: 100%;
+        margin-left: 0;
+    }
+    .description img{
+        height: 200px;
+    }
+
+    .products_section::before{
+        content: '';
+        position: absolute;
+        min-height: 300vh;
+        width: 50%;
+        background: #d1ecf4bf;
+        z-index: -99;
+    }
+    .products_section::after{
+        content: '';
+        position: absolute;
+        min-height: 300vh;
+        width: 50%;
+        left: 50%;
+        background:  #d89fb5;
+        opacity: 0.3;
+        z-index: -99;
+
+    }
+
+    .products_about h1{
+        font-size: 40px;
+    }
+    .products_about h1::before{
+        content: '';
+        visibility: hidden;
+    }
+    .products_about h1::after{
+        content: '';
+        visibility: hidden;
+    }
+    footer{
+        margin-top: 130%;
+        float: bottom;
+    }
+    .productname p {
+        font-size: 15px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#text-container{
+    margin: 10% 0 0 0;
+    text-align: center;
+
+
+}
+#text-container  h1{
+    font-size: 150px;
+    color: rgba(255,255,255,0.1);
+    font-family: 'Montserrat',sans-serif;
+    background: url("../images/Optimized-404.png");
+    -webkit-background-clip: text;
+    animation: animate 7s  linear infinite;
+}
+@keyframes animate {
+    0%{
+        background-position: left 0 top 10px;
+    }
+    40%{
+        background-position: left 500px top  10px;
+    }
+    80%{
+        background-position: left -100px top 10px;
+    }
+    100%
+    {
+        background-position: left -500px  top 10px;
+    }
+
+}
+#paragraph p{
+    text-align: center;
+    color:white;
+    color-rendering: optimizeSpeed;
+}
+#paragraph p a{
+    color:  #ee8866;
+    text-decoration: none;
+}
+#post-details{
+    width: 40%;
+}

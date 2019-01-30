@@ -1,0 +1,1616 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Dancing Script','Montserrat',sans-serif;
+    transition: 2s;
+
+}
+#sidebar{
+    position: absolute;
+    height: 100%;
+    width: 500px;
+    background: #181818;
+    z-index: 9999999;
+    left: -500px;
+    transition: 2s;
+    transform-style: preserve-3d;
+}
+#button{
+    position: absolute;
+    top: 10%;
+    left: 105%;
+    height: 20px;
+    width: 25px;
+    z-index: 9999999;
+}
+.tgl-btn{
+    display: block;
+    height: 5px;
+    background: #ff2090;;
+    width: 25px;
+    margin-top:5%;
+    cursor: pointer;
+}
+
+#sidebar.sal{
+    left: 0;
+}
+#sidebar.active{
+    left: 0;
+    transition: 2s;
+}
+#c{
+    transform: scale(1);
+}
+#a,#b{
+    transform: rotate(0);
+    transition-duration: 1s;
+}
+#a.active{
+    transform: rotate(130deg);
+    transition-duration: 1s;
+}
+#b.active{
+    transform: rotate(-130deg);
+    margin-top: -20%;
+    transition-duration: 1s;
+}
+#c.active{
+    transform: scale(0);
+}
+#button.active{
+    left: 90%;
+}
+nav>ul{
+    text-align: center;
+    margin-top: 10%;
+}
+nav>ul>li>{
+    list-style: none;
+}
+nav>ul{
+    list-style: none;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    font-family: 'Malgun Gothic Semilight','Dancing Script',sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    line-height: 1.5em;
+    color: #d89fb5;
+}
+nav>ul>li>a:hover{
+    color: crimson;
+    transition: 1s;
+}
+#branding_text #left #brand h1 a{
+    font-size: 6rem;
+    font-family: 'Dancing Script','Montserrat', sans-serif;
+    text-decoration: none;
+    color: #47ffe1;
+}
+
+#branding_text #left #brand h1{
+    text-align: center;
+}
+
+@media screen and (max-device-width: 1200px) {
+    #sidebar{
+        width: 500px;
+        left:-500px;
+    }
+    #sidebar.active{
+        left: 0;
+    }
+
+}
+
+
+@media screen and (max-device-width: 900px) {
+    #sidebar{
+        width: 300px;
+        left:-300px;
+    }
+    #sidebar.active{
+        left: 0;
+    }
+    #branding_text #left #brand h1 a{
+        font-size: 3rem;
+        font-family: 'Dancing Script','Montserrat', sans-serif;
+        text-decoration: none;
+        color: #47ffe1;
+    }
+    nav>ul>li>a{
+        text-decoration: none;
+        font-family: 'Malgun Gothic Semilight','Dancing Script',sans-serif;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.5em;
+        color: #d89fb5;
+    }
+
+
+}
+
+
+@media screen and (max-device-width: 700px) {
+    #sidebar{
+        width: 350px;
+        left:-350px;
+    }
+    #sidebar.active{
+        left: 0;
+    }
+    #branding_text #left #brand h1 a{
+        font-size: 3rem;
+        font-family: 'Dancing Script','Montserrat', sans-serif;
+        text-decoration: none;
+        color: #47ffe1;
+    }
+    nav>ul>li>a{
+        text-decoration: none;
+        font-family: 'Malgun Gothic Semilight','Dancing Script',sans-serif;
+        text-align: center;
+        font-size: 4.5rem;
+        line-height: 1.5em;
+        color: #d89fb5;
+    }
+}
+
+@media screen and (max-device-width: 650px) {
+    #sidebar{
+        width: 200px;
+        left:-200px;
+    }
+    #sidebar.active{
+        left: 0;
+    }
+    #branding_text #left #brand h1 a{
+        font-size: 2rem;
+        font-family: 'Dancing Script','Montserrat', sans-serif;
+        text-decoration: none;
+        color: #47ffe1;
+    }
+    nav>ul>li>a{
+        text-decoration: none;
+        font-family: 'Malgun Gothic Semilight','Dancing Script',sans-serif;
+        text-align: center;
+        font-size: 4rem;
+        line-height: 1.5em;
+        color: #d89fb5;
+    }
+
+    #button.active{
+        left: 80%;
+        top: 12%;
+    }
+
+}
+
+
+@media screen and (max-device-width: 500px) {
+    #sidebar{
+        width: 200px;
+        left:-200px;
+    }
+    #sidebar.active{
+        left: 0;
+    }
+    #branding_text #left #brand h1 a{
+        font-size: 2rem;
+        font-family: 'Dancing Script','Montserrat', sans-serif;
+        text-decoration: none;
+        color: #47ffe1;
+    }
+    nav>ul>li>a{
+        text-decoration: none;
+        font-family: 'Malgun Gothic Semilight','Dancing Script',sans-serif;
+        text-align: center;
+        font-size: 4rem;
+        line-height: 1.5em;
+        color: #d89fb5;
+    }
+
+    #button.active{
+        left: 80%;
+        top: 12%;
+    }
+
+}
+
+
+
+@media screen and (max-device-width: 400px) {
+    #sidebar{
+        width: 200px;
+        left:-200px;
+        min-height: 100vh;
+    }
+    #sidebar.active{
+        left: 0;
+    }
+    #branding_text #left #brand h1 a{
+        font-size: 2rem;
+        font-family: 'Dancing Script','Montserrat', sans-serif;
+        text-decoration: none;
+        color: #47ffe1;
+    }
+    nav>ul>li>a{
+        text-decoration: none;
+        font-family: 'Malgun Gothic Semilight','Dancing Script',sans-serif;
+        text-align: center;
+        font-size: 4rem;
+        line-height: 1.5em;
+        color: #d89fb5;
+    }
+
+    #button.active{
+        left: 80%;
+        top: 12%;
+    }
+
+}
+
+
+
+@media screen and (max-device-width: 350px) {
+    #sidebar{
+        width: 200px;
+        left:-200px;
+        min-height: 100vh;
+    }
+    #sidebar.active{
+        left: 0;
+    }
+    #branding_text #left #brand h1 a{
+        font-size: 2rem;
+        font-family: 'Dancing Script','Montserrat', sans-serif;
+        text-decoration: none;
+        color: #47ffe1;
+    }
+    nav>ul>li>a{
+        text-decoration: none;
+        font-family: 'Malgun Gothic Semilight','Dancing Script',sans-serif;
+        text-align: center;
+        font-size: 3.5rem;
+        line-height: 1.5em;
+        color: #d89fb5;
+    }
+
+    #button.active{
+        left: 80%;
+        top: 12%;
+    }
+
+}
+
+
+
+
+
+
+/*-------------------Navbar Ends--------------------*/
+section,#home{
+    min-height: 100vh;
+    width: auto;
+    margin: 0;
+    z-index: -999;
+}
+#home::before{
+    content: '';
+    position: absolute;
+    background: #d1ecf4bf;
+    width: 100%;
+    min-height: 100vh;
+    z-index: -999;
+}
+.container{
+    min-height: 100vh;
+    width: 70%;
+    position: absolute;
+    z-index: -999;
+    top: 0;
+    left: 30%;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    background: radial-gradient(circle,#ffffff,#d89fb5);
+    height: 100vh;
+    width: 100%;
+    opacity: 0.3;
+}
+.container img{
+    height: 100vh;
+    width: 100%;
+
+}
+.center_text{
+    text-align: center;
+    width: 30%;
+    margin:auto;
+    position: absolute;
+    z-index: 999;
+    top: 10%;
+    left: 7%;
+    color: white;
+}
+.center_text h1{
+    font-size: 10rem;
+    font-family: "Malgun Gothic Semilight",'Dancing Script',Marlett,sans-serif;
+    margin-left: 30%;
+}
+#halka_sa_right{
+    margin-left: 76%;
+}
+
+.side_text_container{
+    width: 30%;
+    background: #ffffff;
+    border: 3px solid sandybrown;
+    margin-bottom: -2%;
+    margin-left: 70%;
+}
+
+#side_text{
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    font-family: 'Dancing Script',sans-serif;
+    font-size: 1.5rem;
+
+}
+#quotes{
+    width: 30%;
+    height: 100px;
+    margin-top: -9%;
+    margin-left: 40%;
+}
+#bottom_quotes{
+    width: 30%;
+    height: 50px;
+    margin-top: 37%;
+    margin-left: 65%;
+}
+
+.smaller_size{
+    font-size: 20px;
+}
+.bottom_text{
+    font-size: 15px;
+    color: white;
+    font-weight: lighter;
+}
+.ek_line_mai{
+    width: 45%;
+    float: left;
+    margin-top: 5%;
+    margin-left: 4%;
+}
+
+.ek_line_mai a{
+    text-decoration: none;
+    color: #ff2090;
+    font-weight: bolder;
+    font-family: "Dancing Script", "Segoe Script", sans-serif;
+    font-size: 30px;
+}
+
+.ek_line_mai a:before{
+    content: '';
+    position: absolute;
+    top: 10%;
+    width: 0;
+    height: 1px;
+    background: #ff2090;
+    transform: scale(0);
+    transition: 2s;
+}
+.ek_line_mai a:hover:before{
+    content: '';
+    position: absolute;
+    width: 13%;
+    background: #ff2090;;
+    transform: scale(1);
+    transition: 2s;
+}
+.bottom_text{
+    margin-left: 18%;
+}
+#sajawat{
+    width: 20%;
+    font-family: "Dancing Script","Segoe Script",sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 120px;
+    background: transparent;
+    margin-left: 80%;
+
+}
+#wish_text {
+    text-align: center;
+    margin-top: 0;
+    color: #ff2090;;
+
+}
+#greetings{
+    color: #ff2090;;
+    text-align: center;
+}
+hr{
+    background-color: blueviolet;
+    -webkit-background-color:blueviolet;
+    -moz-background-color: blueviolet;
+}
+
+.slideshow-container {
+    width: 520px;
+    height: 300px;
+    position: absolute;
+    margin: auto;
+    z-index: 99;
+    top: 60%;
+
+}
+.slideshow-container img{
+    width: 100%;
+    height: 300px;
+}
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    transition: ease-in-out;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color:  blueviolet;
+    font-size: 15px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #ff2090;;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot_container{
+    position: absolute;
+    text-align: center;
+    top: 93%;
+    left: 15%;
+    z-index: 99;
+
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen  and (max-device-width: 1200px){
+    .mySlides{
+        margin-top: 48%;
+    }
+    .dot_container{
+        margin-top: 10%;
+        margin-left: 7%;
+    }
+    .numbertext{
+        margin-top: 50%;
+    }
+    .prev,.next{
+        margin-top: 50%;
+    }
+    #bottom_quotes{
+        width: 40%;
+        margin-top: 110%;
+        margin-left: 60%;
+
+    }
+    .dot_container{
+        top: 90%;
+    }
+
+}
+
+@media screen  and (max-device-width: 900px){
+    .slideshow-container{
+        position: absolute;
+        height: 200px;
+        width: 220px;
+        top: 19%;
+    }
+    .mySlides img{
+        height: 200px;
+        width: 100%;
+    }
+    .dot_container{
+        margin-top: -2%;
+        margin-left: -5%;
+    }
+    .dot{
+        height: 2px;
+    }
+    .numbertext{
+        margin-top: 50%;
+    }
+    .text{
+        position: absolute;
+        top: 140%;
+    }
+    .prev,.next{
+        margin-top: 50%;
+    }
+    /* add css for 750 800px */
+    #bottom_quotes{
+        margin-top: 100%;
+        margin-left: 50%;
+        width: 50%;
+    }
+    .center_text{
+        text-align: center;
+        width: 30%;
+        margin:auto;
+        position: absolute;
+        z-index: 999;
+        top: 10%;
+        left: 10%;
+        color: white;
+    }
+    .center_text h1{
+        font-size: 3rem;
+        font-family: "Malgun Gothic Semilight",'Dancing Script',Marlett,sans-serif;
+        margin-left: 30%;
+    }
+    #halka_sa_right{
+        margin-left: 60%;
+    }
+
+    #home{
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        z-index: -999;
+    }
+    #home::before{
+        content: '';
+        position: absolute;
+        background: #d1ecf4bf;
+        max-width: 100%;
+        min-height: 100vh;
+        z-index: -999;
+    }
+    .container{
+        height: 100vh;
+        max-width: 100%;
+        position: absolute;
+        z-index: -999;
+        top: 0;
+        left: 30%;
+    }
+    .container::before{
+        content: '';
+        position: absolute;
+        background: radial-gradient(circle,#ffffff,#d89fb5);
+        height: 100vh;
+        width: 100%;
+        opacity: 0.3;
+    }
+    .container img{
+        height: 100vh;
+        width: 100%;
+
+    }
+
+    #sajawat{
+        width:30%;
+        font-family: "Dancing Script","Segoe Script",sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        height: 120px;
+        background: transparent;
+        margin-left: 70%;
+    }
+    #wish_text {
+        text-align: center;
+        margin-top: 0;
+        color: #ff2090;;
+
+
+    }
+    #greetings{
+        color: #ff2090;;
+        text-align: center;
+    }
+
+    hr{
+        background-color: #ff2090;;
+
+    }
+
+
+}
+
+@media screen  and (max-device-width: 700px){
+    .slideshow-container{
+        position: absolute;
+        height: 150px;
+        width: 220px;
+        top: 29%;
+    }
+    .mySlides img   {
+        height: 150px;
+        width: 100%;
+    }
+    .dot_container{
+        margin-top: 3%;
+        margin-left: -3%;
+    }
+    .text{
+        position: absolute;
+        top: 150%;
+    }
+    .numbertext{
+        margin-top: 50%;
+    }
+    .prev,.next{
+        margin-top: 50%;
+    }
+    .dot{
+        height: 1px;
+    }
+    .center_text{
+        text-align: center;
+        width: 30%;
+        margin:auto;
+        position: absolute;
+        z-index: 999;
+        top: 10%;
+        left: 10%;
+        color: white;
+    }
+    .center_text h1{
+        font-size: 4rem;
+        font-family: "Malgun Gothic Semilight",'Dancing Script',Marlett,sans-serif;
+        margin-left: 10%;
+    }
+    #halka_sa_right{
+        margin-left: 50%;
+    }
+
+    #home{
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        z-index: -999;
+    }
+    #home::before{
+        content: '';
+        position: absolute;
+        background: #d1ecf4bf;
+        max-width: 100%;
+        min-height: 100vh;
+        z-index: -999;
+    }
+    .container{
+        height: 100vh;
+        max-width: 100%;
+        position: absolute;
+        z-index: -999;
+        top: 0;
+        left: 30%;
+    }
+    .container::before{
+        content: '';
+        position: absolute;
+        background: radial-gradient(circle,#ffffff,#d89fb5);
+        height: 100vh;
+        width: 100%;
+        opacity: 0.3;
+    }
+    .container img{
+        height: 100vh;
+        width: 100%;
+
+    }
+
+    #sajawat{
+        width: 20%;
+        font-family: "Dancing Script","Segoe Script",sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        height: 120px;
+        background: transparent;
+        margin-left: 80%;
+    }
+    #wish_text {
+        text-align: center;
+        margin-top: 0;
+        color: #ff2090;;
+
+    }
+    #greetings{
+        color: #ff2090;;
+        text-align: center;
+    }
+    hr{
+        background-color: #ff2090;;
+        -webkit-background-color:#ff2090;;
+        -moz-background-color: #ff2090;;
+    }
+
+
+}
+
+
+
+@media screen  and (max-device-width: 500px){
+    .slideshow-container{
+        position: absolute;
+        height: 260px;
+        width: 220px;
+        top: 50%;
+    }
+    .mySlides img   {
+        height: 260px;
+        width: 100%;
+    }
+    .dot_container{
+        margin-top: 3%;
+        margin-left: 5%;
+    }
+    .text{
+        position: absolute;
+        top: 130%;
+    }
+    .numbertext{
+        margin-top: 50%;
+    }
+    .prev,.next{
+        margin-top: 50%;
+    }
+    .dot{
+        height: 1px;
+    }
+    .center_text{
+        text-align: center;
+        width: 30%;
+        margin:auto;
+        position: absolute;
+        z-index: 999;
+        top: 30%;
+        left: 10%;
+        color: white;
+    }
+    .center_text h1{
+        font-size: 5rem;
+        font-family: "Malgun Gothic Semilight",'Dancing Script',Marlett,sans-serif;
+        margin-left: 10%;
+    }
+    #halka_sa_right{
+        margin-left: 60%;
+    }
+
+    #home{
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        z-index: -999;
+    }
+    #home::before{
+        content: '';
+        position: absolute;
+        background: #d1ecf4bf;
+        max-width: 100%;
+        min-height: 100vh;
+        z-index: -999;
+    }
+    .container{
+        height: 100vh;
+        max-width: 100%;
+        position: absolute;
+        z-index: -999;
+        top: 0;
+        left: 30%;
+    }
+    .container::before{
+        content: '';
+        position: absolute;
+        background: radial-gradient(circle,#ffffff,#d89fb5);
+        height: 100vh;
+        width: 100%;
+        opacity: 0.3;
+    }
+    .container img{
+        height: 100vh;
+        width: 100%;
+
+    }
+
+    #sajawat{
+        width: 35%;
+        font-family: "Dancing Script","Segoe Script",sans-serif;
+        font-size: 15px;
+        text-align: center;
+        height: 120px;
+        background: transparent;
+        margin-left: 65%;
+    }
+    #wish_text {
+        text-align: center;
+        margin-top: 0;
+        color: #ff2090;;
+
+    }
+    #greetings{
+        color: #ff2090;;
+        text-align: center;
+    }
+    hr{
+        background-color: #ff2090;;
+        -webkit-background-color:#ff2090;;
+        -moz-background-color: #ff2090;;
+    }
+
+    #quotes{
+        width: 50%;
+        margin-top: -10%;
+        margin-left: 10%;
+    }
+
+    .ek_line_mai p{
+        font-size: 10px;
+    }
+
+    .ek_line_mai a{
+        font-size: 15px;
+    }
+
+    #bottom_quotes{
+        margin-top: 110%;
+        width: 50%;
+        margin-left: 53%;
+
+    }
+
+
+
+}
+
+
+@media screen  and (max-device-width: 400px){
+    .slideshow-container{
+        position: absolute;
+        height: 260px;
+        width: 220px;
+        top: 45%;
+    }
+    .mySlides img   {
+        height: 260px;
+        width: 100%;
+    }
+    .dot_container{
+        margin-top: 3%;
+        margin-left: 5%;
+    }
+    .text{
+        position: absolute;
+        top: 130%;
+    }
+    .numbertext{
+        margin-top: 50%;
+    }
+    .prev,.next{
+        margin-top: 50%;
+    }
+    .dot{
+        height: 1px;
+    }
+    .center_text{
+        text-align: center;
+        width: 30%;
+        margin:auto;
+        position: absolute;
+        z-index: 999;
+        top: 20%;
+        left: 10%;
+        color: white;
+    }
+    .center_text h1{
+        font-size: 4rem;
+        font-family: "Malgun Gothic Semilight",'Dancing Script',Marlett,sans-serif;
+        margin-left: 10%;
+    }
+    #halka_sa_right{
+        margin-left: 50%;
+    }
+
+    #home{
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        z-index: -999;
+    }
+    #home::before{
+        content: '';
+        position: absolute;
+        background: #d1ecf4bf;
+        max-width: 100%;
+        min-height: 100vh;
+        z-index: -999;
+    }
+    .container{
+        height: 100vh;
+        max-width: 100%;
+        position: absolute;
+        z-index: -999;
+        top: 0;
+        left: 30%;
+    }
+    .container::before{
+        content: '';
+        position: absolute;
+        background: radial-gradient(circle,#ffffff,#d89fb5);
+        height: 100vh;
+        width: 100%;
+        opacity: 0.3;
+    }
+    .container img{
+        height: 100vh;
+        width: 100%;
+
+    }
+
+    #sajawat{
+        width: 35%;
+        font-family: "Dancing Script","Segoe Script",sans-serif;
+        font-size: 15px;
+        text-align: center;
+        height: 120px;
+        background: transparent;
+        margin-left: 65%;
+    }
+    #wish_text {
+        text-align: center;
+        margin-top: 0;
+        color: #ff2090;;
+
+    }
+    #greetings{
+        color: #ff2090;;
+        text-align: center;
+    }
+    hr{
+        background-color: #ff2090;;
+        -webkit-background-color:#ff2090;;
+        -moz-background-color: #ff2090;;
+    }
+
+
+    #bottom_quotes{
+        visibility: hidden;
+    }
+
+
+}
+
+
+
+@media screen  and (max-device-width: 370px) {
+    .slideshow-container {
+        position: absolute;
+        height: 260px;
+        width: 220px;
+        top: 43%;
+    }
+
+    .mySlides img {
+        height: 260px;
+        width: 100%;
+    }
+
+    .dot_container {
+        margin-top: 3%;
+        margin-left: 5%;
+    }
+
+    .text {
+        position: absolute;
+        top: 130%;
+    }
+
+    .numbertext {
+        margin-top: 50%;
+    }
+
+    .prev, .next {
+        margin-top: 50%;
+    }
+
+    .dot {
+        height: 1px;
+    }
+
+    .center_text {
+        text-align: center;
+        width: 30%;
+        margin: auto;
+        position: absolute;
+        z-index: 999;
+        top: 30%;
+        left: 10%;
+        color: white;
+    }
+
+    .center_text h1 {
+        font-size: 4rem;
+        font-family: "Malgun Gothic Semilight", 'Dancing Script', Marlett, sans-serif;
+        margin-left: 10%;
+
+    }
+
+    #halka_sa_right {
+        margin-left: 50%;
+    }
+
+    #home {
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        z-index: -999;
+    }
+
+    #home::before {
+        content: '';
+        position: absolute;
+        background: #d1ecf4bf;
+        max-width: 100%;
+        min-height: 100vh;
+        z-index: -999;
+    }
+
+    .container {
+        height: 100vh;
+        max-width: 100%;
+        position: absolute;
+        z-index: -999;
+        top: 0;
+        left: 30%;
+    }
+
+    .container::before {
+        content: '';
+        position: absolute;
+        background: radial-gradient(circle, #ffffff, #d89fb5);
+        height: 100vh;
+        width: 100%;
+        opacity: 0.3;
+    }
+
+    .container img {
+        height: 100vh;
+        width: 100%;
+
+    }
+
+    #sajawat {
+        width: 40%;
+        font-family: "Dancing Script", "Segoe Script", sans-serif;
+        font-size: 15px;
+        text-align: center;
+        height: 120px;
+        background: transparent;
+        margin-left: 60%;
+    }
+
+    #wish_text {
+        text-align: center;
+        margin-top: 0;
+        color: #ff2090;;
+
+    }
+
+    #greetings {
+        color: #ff2090;;
+        text-align: center;
+    }
+
+    hr {
+        background-color: #ff2090;;
+        -webkit-background-color: #ff2090;;
+        -moz-background-color: #ff2090;;
+    }
+
+    #bottom_quotes{
+        visibility: hidden;
+    }
+
+}
+
+
+
+@media screen  and (max-device-width: 330px){
+    .slideshow-container{
+        position: absolute;
+        height: 260px;
+        width: 220px;
+        top: 35.5%;
+    }
+    .mySlides img   {
+        height: 260px;
+        width: 100%;
+    }
+    .dot_container{
+        margin-top: 3%;
+        margin-left: 7%;
+    }
+    .text{
+        position: absolute;
+        top: 130%;
+    }
+    .numbertext{
+        margin-top: 50%;
+    }
+    .prev,.next{
+        margin-top: 50%;
+    }
+    .dot{
+        height: 1px;
+    }
+    .center_text{
+        text-align: center;
+        width: 30%;
+        margin:auto;
+        position: absolute;
+        z-index: 999;
+        top: 35%;
+        left: 10%;
+        color: white;
+    }
+    .center_text h1{
+        font-size: 3rem;
+        font-family: "Malgun Gothic Semilight",'Dancing Script',Marlett,sans-serif;
+        margin-left: 10%;
+    }
+    #halka_sa_right{
+        margin-left: 50%;
+    }
+
+    #home{
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        z-index: -999;
+    }
+    #home::before{
+        content: '';
+        position: absolute;
+        background: #d1ecf4bf;
+        max-width: 100%;
+        min-height: 100vh;
+        z-index: -999;
+    }
+    .container{
+        height: 100vh;
+        max-width: 100%;
+        position: absolute;
+        z-index: -999;
+        top: 0;
+        left: 30%;
+    }
+    .container::before{
+        content: '';
+        position: absolute;
+        background: radial-gradient(circle,#ffffff,#d89fb5);
+        height: 100vh;
+        width: 100%;
+        opacity: 0.3;
+    }
+    .container img{
+        height: 100vh;
+        width: 100%;
+
+    }
+
+    #sajawat{
+        width: 40%;
+        font-family: "Dancing Script","Segoe Script",sans-serif;
+        font-size: 15px;
+        text-align: center;
+        height: 120px;
+        background: transparent;
+        margin-left: 60%;
+    }
+    #wish_text {
+        text-align: center;
+        margin-top: 0;
+        color: #ff2090;;
+
+    }
+    #greetings{
+        color: #ff2090;;
+        text-align: center;
+    }
+    hr{
+        background-color: #ff2090;;
+        -webkit-background-color:#ff2090;;
+        -moz-background-color: #ff2090;;
+    }
+
+
+}
+
+
+/*-------------About--------------*/
+.section_container{
+    background: url("../images/back.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+.section_container::before{
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg,#ffffff,#ffffff);
+    opacity: 0.3;
+    z-index: 0;
+}
+
+#simple_intro{
+    position: absolute;
+    width: 30%;
+    margin-top: 0%;
+    z-index: 1;
+    left: 60%;
+}
+
+#simple_intro h1{
+    font-size: 10rem;
+    font-family: "Dancing Script", "Segoe Script", sans-serif;
+    color: #ff2090;
+}
+
+#side_Align{
+    position: absolute;
+    width: 37%;
+    margin-top: 25%;
+    text-align: justify;
+    left: 60%;
+    z-index: 1;
+
+}
+#side_Align p{
+    font-size: 30px;
+    font-family: "Dancing Script", "Segoe Script", sans-serif;
+    color: #ff2090;
+    font-weight: bolder;
+}
+
+#image-container{
+    height: 500px;
+    width: 500px;
+    border: 3px solid white;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 15%;
+    background: #181818;
+}
+
+#image-container img{
+    height: 500px;
+    width: 100%;
+}
+#caption_text p{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    opacity: 0;
+    transition: 1s;
+}
+
+#image-container:hover img{
+    opacity: 0.3;
+    transition: 1s;
+
+}
+
+#image-container:hover #caption_text>p{
+    opacity: 1;
+    transform: translateY(-280px);
+    transition: 1s;
+
+}
+
+
+
+
+
+
+
+
+.products_section{
+    min-height: 120vh;
+    width: 100%;
+}
+
+.products_section::before{
+    content: '';
+    position: absolute;
+    min-height: 120vh;
+    width: 50%;
+
+    background: #d1ecf4bf;
+    z-index: -99;
+}
+.products_section::after{
+    content: '';
+    position: absolute;
+    min-height: 120vh;
+    width: 50%;
+    left: 50%;
+    background:  #d89fb5;
+    opacity: 0.3;
+    z-index: -99;
+
+}
+
+.products_about{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+
+}
+.products_about h1{
+    font-size: 5rem;
+    font-family: "Dancing Script", "Segoe Script", sans-serif;
+    color: #ff2090;
+}
+
+.outer-box{
+    height: 80vh;
+    width: 80%;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 11%;
+
+}
+.inbox{
+    height: 300px;
+    width: 25%;
+    margin: 3%;
+    float: left;
+    background: #000;
+    border: 3px solid palevioletred;
+    box-shadow: 3px 3px 15px 10px rgba(0,0,0,0.3);
+    transition: 1s;
+
+}
+.inbox a{
+    text-decoration: none;
+}
+.description{
+    height: 100%;
+    width: 100%;
+    background: white;
+    transition: 1s;
+}
+
+.description img{
+    height: 250px;
+    width: 100%;
+}
+
+
+.description p{
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    margin-top: 2%;
+    font-size: 25px;
+}
+
+.uppertext {
+    text-align: center;
+    opacity: 0;
+    transition: 1s;
+    color: white;
+    font-size: 25px;
+}
+
+.inbox:hover{
+    box-shadow: none;
+    transition: 1s;
+}
+.inbox:hover .description{
+    opacity: 0.5;
+}
+
+.inbox:hover .uppertext{
+    opacity: 1;
+    transform: translateY(-170px);
+    transition: 1s;
+}
+
+/*------------------Footer-----------------*/
+footer{
+    height: 50px;
+    background: palevioletred;
+
+}
+#credits{
+    text-align: center;
+}
+#credits p{
+    font-size: 30px;
+    color: white;
+}
+
+
+
+@media screen and (max-device-width:500px){
+    section{
+        overflow-x: hidden;
+    }
+    #image-container{
+        visibility: hidden;
+    }
+
+    #simple_intro h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    #simple_intro{
+        left: 30%;
+        margin-top: 10%;
+    }
+    #side_Align{
+        left: 5%;
+        width: 90%;
+        text-align: center;
+        font-size: 10px;
+        margin-top: 45%;
+    }
+    #side_Align p{
+        font-size: 25px;
+    }
+
+    .inbox{
+        width: 40%;
+        margin: 3%;
+        height: 250px;
+    }
+    .outer-box{
+        margin-top: 30%;
+        width: 100%;
+        margin-left: 0;
+    }
+     .description img{
+         height: 200px;
+     }
+
+    .products_section::before{
+        content: '';
+        position: absolute;
+        min-height: 160vh;
+        width: 50%;
+        background: #d1ecf4bf;
+        z-index: -99;
+    }
+    .products_section::after{
+        content: '';
+        position: absolute;
+        min-height: 160vh;
+        width: 50%;
+        left: 50%;
+        background:  #d89fb5;
+        opacity: 0.3;
+        z-index: -99;
+
+    }
+
+    .products_about h1{
+        font-size: 60px;
+    }
+
+    footer{
+        margin-top: 60%;
+        float: bottom;
+    }
+
+    #image-container{
+        height: 0;
+        width: 0;
+    }
+    #image-container img{
+        height: 0;
+        width: 0;
+    }
+
+}

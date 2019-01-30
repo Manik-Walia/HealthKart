@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Meta tag responsible for responsiveness of site-->
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Healthkart</title>
+    <!-- For Linking Stylesheet-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/plant-2004483_1920.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Thasadith|Montserrat|Dancing+Script" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Javascript-->
+    <script src="./js/main.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+<body>
+<header>
+    <div id="sidebar" onclick="navSlide()">
+        <div id="button" onclick="navMove()" class="close">
+            <span id="a" class="tgl-btn">
+
+            </span>
+            <span id="b" class="tgl-btn">
+
+            </span>
+            <span id="c" class="tgl-btn">
+
+            </span>
+        </div>
+        <div id="branding_text" class="close" onclick="navSlide()">
+            <div id="left">
+                <div id="brand" class="close">
+                    <h1>
+                        <a href="#"> HealthKart</a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul class="close" onclick="navSlide()">
+                <li>
+                    <a href="#" class="close" onclick="navSlide()">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" class="close" onclick="navSlide()">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="./login.html" class="close" onclick="navSlide()">
+                      Login
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section id="home">
+    <div class="center_text" data-aos="zoom-in" data-aos-duration="3000">
+        <h1>
+            Health<br>
+            <hr data-aos="zoom-in">
+        </h1>
+
+        <h1 id="halka_sa_right" data-aos="zoom-in">
+            Kart
+        </h1>
+    </div>
+
+    <div class="container animated fadeIn slower" >
+        <img src="./images/bouquet-3175315_1920.jpg" alt="Yoga Girl" >
+    </div>
+    <div id="sajawat">
+        <div id="wish">
+            <h1 id="wish_text" data-aos="zoom-in" data-aos-duration="3000">
+                Hello World
+            </h1>
+            <hr data-aos="zoom-in">
+            <p id="greetings" data-aos="zoom-in" data-aos-duration="3000">
+                 Hola Amigoes
+            </p>
+        </div>
+    </div>
+    <div id="quotes">
+        <div id="first" class="ek_line_mai">
+            <h1 class="smaller_size"><a href="./login.html">Login</a></h1>
+            <p class="bottom_text">Click To Login</p>
+        </div>
+        <div id="second" class="ek_line_mai">
+            <h1 class="smaller_size"><a href="./products.html">Products</a></h1>
+            <p class="bottom_text">Check Products Here</p>
+        </div>
+    </div>
+    <div id="bottom_quotes">
+        <div id="bottom_first" class="ek_line_mai"id="neeche">
+            <h1 class="smaller_size"><a href="#about">About</a></h1>
+            <p class="bottom_text">Who are we</p>
+        </div>
+        <div id="bottom_second" class="ek_line_mai" id="neeche2">
+            <h1 class="smaller_size"><a href="./Error404.html">Social</a></h1>
+            <p class="bottom_text">Check Us Here</p>
+        </div>
+    </div>
+    <div class="slideshow-container" data-aos="zoom-in" data-aos-duration="3000">
+
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./images/plant-2004483_1920.jpg">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./images/bouquet-3175315_1920.jpg">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./images/flower-610405_1920.jpg">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div class="dot_container">
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    </div>
+
+
+
+</section>
+
+<section id="about">
+    <div class="section_container">
+      <div id="simple_intro" data-aos-duration="1500" data-aos="fade-up">
+          <h1>About
+          </h1>
+             <h1 id="halka_sa_right"> US</h1>
+      </div>
+        <div id="side_Align" class="side_align" data-aos="fade-up" data-aos-duration="1500">
+            <p>
+               Hola Amigoes. We are Health Kart your partners to maintain your health. In these days of you are worried about your work and we are dedicated towards yourself. At Health Kart we believe that it is our duty to make you healthy and take care of your health. By our wide range of products you will stay fit and have all day energy to do your work and have a happy time with your family.
+            </p>
+        </div>
+        <div id="image-container">
+            <img src="images/amy-shamblen-662202-unsplash.jpg">
+            <div id="caption_text">
+                <p>
+                    We care Better
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="products">
+<div class="products_section">
+    <div class="products_about">
+        <h1>
+            Our products
+        </h1>
+    </div>
+    <div class="outer-box">
+        <div class="inbox" data-aos-duration="1500" data-aos="fade-up">
+            <div class="description">
+                <a href="./products.html">
+                    <img src="./images/plant-2004483_1920.jpg">
+                    <div class="productname">
+                        <p>Lorem Ipsum</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <p class="uppertext">View All</p>
+            </div>
+        </div>
+        <div class="inbox" data-aos-duration="1500" data-aos="fade-up">
+            <div class="description">
+                <a href="./products.html">
+                    <img src="./images/plant-2004483_1920.jpg">
+                    <div class="productname">
+                        <p>Lorem Ipsum</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <p class="uppertext">View All</p>
+            </div>
+        </div>
+        <div class="inbox" data-aos-duration="1500" data-aos="fade-up">
+            <div class="description">
+                <a href="./products.html">
+                    <img src="./images/plant-2004483_1920.jpg">
+                    <div class="productname">
+                        <p>Lorem Ipsum</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <p class="uppertext">View All</p>
+            </div>
+        </div>
+        <div class="inbox" data-aos-duration="1500" data-aos="fade-up">
+            <div class="description">
+                <a href="./products.html">
+                    <img src="./images/plant-2004483_1920.jpg">
+                    <div class="productname">
+                        <p>Lorem Ipsum</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <p class="uppertext">View All</p>
+            </div>
+        </div>
+        <div class="inbox"data-aos-duration="1500" data-aos="fade-up">
+            <div class="description">
+                <a href="./products.html">
+                    <img src="./images/plant-2004483_1920.jpg">
+                    <div class="productname">
+                        <p>Lorem Ipsum</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <p class="uppertext">View All</p>
+            </div>
+        </div>
+        <div class="inbox" data-aos-duration="1500" data-aos="fade-up">
+            <div class="description">
+                <a href="./products.html">
+                    <img src="./images/plant-2004483_1920.jpg">
+                    <div class="productname">
+                        <p>Lorem Ipsum</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <p class="uppertext">View All</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+</section>
+
+<footer>
+    <div id="credits">
+        <p> <i class="fa fa-code"></i> and <i class="fa fa-paint-brush"></i> by Manik Walia</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    AOS.init({
+        once:true,
+
+    });
+
+    /* for displaying date*/
+    var time= new Date();
+    var hours = time.getHours();
+    var msg="";
+    console.log("Hello world");
+    if(hours>=0&&hours<12){
+        msg="Good Morning,Don't Forget to drink water";
+    }
+    else if(hours>=12&&hours<=16){
+        msg="Good Afternoon,May you have an wonderful evening";
+    }
+
+    else if(hours>16&&hours<20){
+        msg="Good Evening, Its time to do some rest";
+    }
+    else if(hours>=20&&hours<=24)
+    {
+        msg="Good Night,Tomorrow will be an awesome day";
+    }
+    else{
+        msg="Greetings user,Shine Bright like a diamond";
+    }
+
+    var write=document.getElementById('greetings');
+    write.innerHTML=msg;
+
+   /* for slideshow */
+
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+
+
+
+</script>
+</body>
+</html>
